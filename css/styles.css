@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face {
+    font-family: 'EditorialNew-Italic';
+    src: url(../tipografias/PPEditorialNew-Italic.otf) format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'EditorialNew-Regular';
+    src: url(../tipografias/PPEditorialNew-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EditorialNew-Ultrabold';
+    src: url(../tipografias/PPEditorialNew-Ultrabold.otf) format('opentype');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraboldItalic';
+    src: url(../tipografias/PPEditorialNew-UltraboldItalic.otf) format('opentype');
+    font-weight: bolder;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraLightItalic';
+    src: url(../tipografias/PPEditorialNew-UltralightItalic.otf) format('opentype');
+    font-weight: lighter;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EditorialNew-UltraLight';
+    src: url(../tipografias/PPEditorialNew-Ultralight.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bigilla';
+    src: url(../tipografias/Bigilla.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bigilla-Bold';
+    src: url(../tipografias/Bigilla-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+:root {
+    --colorFondo: #031f33 ;
+    --colorClaro: #fcebd8;
+    --color1: #316b8f;
+    --color2: #58b2d9;
+    --color3: #fea9b6;
+    --tipoTitulos: 'Bigilla-Bold';
+    --tipoGeneral: 'EditorialNew-UltraLight';
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--tipoGeneral);
+    scroll-behavior: smooth;
+   background-color: white;
+    color: var(--color1);
+}
+
+header {
+    width: 100vw;
+    position: sticky;
+    top: calc(-100vh + 5em);
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+button{
+    background-color: var(--color1);
+    color: var(--colorClaro);
+    border-radius: 2em !important;
+    border: none;
+    width: 6em;
+}
+button:hover{
+    background-color: var(--colorFondo);
+
+    border-radius: 2em !important;
+
+}
+
+
+#logo {
+    width: 125px;
+    height: auto;
+    margin: 0em 3em;
+    background-color: transparent !important;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 9;
+    padding: 1em 4em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 1s;
+    display: flex;
+    box-shadow: 0px 6px 15px 0 rgba(255, 255, 255, 0.562);
+    background-color: var(--color1) !important;
+}
+
+.menu>li {
+    list-style: none;
+    color: var(--colorClaro);
+  
+    font-size: 1em;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none !important;
+    background-color: transparent;
+    color: var(--colorClaro)  !important;
+}
+.menu>li>a:hover {
+    font-family: 'EditorialNew-UltraLightItalic' ;
+}
+
+
+.hamburguer{
+    display: none;
+}
+.showMenu {
+    transform: translateY(0);
+  }
+
+/* SECTIONS */
+section {
+    width: 90%;
+    max-width: 1500px;
+    margin: auto;
+    padding: 3em 0;
+}
+
+section>h1 {
+    text-align: center;
+    color: var(--color1);
+    font-size: 3em;
+    padding: 2em;
+    font-family: var(--tipoTitulos);
+}
+
+section>p {
+    text-align: justify;
+    margin: 1em;
+    font-family: var(--tipoGeneral);
+    color: var(--colorClaro);
+}
+/* INTRO */
+#intro>div>h1{
+    font-family: var(--tipoGeneral);
+    color: var(--color1);
+    font-size: 4em;
+
+}
+#intro>div>a>p{
+    font-family: var(--tipoGeneral);
+    color: var(--color1);
+}
+#intro>div>a>p:hover{
+    font-family: 'EditorialNew-Italic' ;
+    cursor: pointer;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 6em;
+
+}
+#intro>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#intro>div>img {
+    width: 74vw;
+    margin-top: 5em;
+}
+
+
+/* Sobre nosotros */
+#aboutus>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -6em;
+
+   }
+   #aboutus>p{
+    color: var(--color1);
+    text-align: center;
+   }
+#aboutus>div>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1.5em;
+    flex: 50%;
+
+   }
+   #aboutus>div>div:nth-child(2n-1){
+     
+      margin-top: 7em;
+   }
+#aboutus>div>div>img{
+ padding: 1em 1.5em;
+ width: 10vw;
+ height: auto;
+}
+#aboutus>div>div>p{
+    font-size: 1em;
+    text-align: center;
+    padding: 0.5em 1em;
+}
+  
+
+/* FOOTER */
+footer {
+    padding: 8em 0em;
+    box-shadow: 0 -15px 15px 0 rgba(255, 255, 255, 0.562); 
+}
+footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+#footer_izq{
+    display: flex;
+    flex-direction: row;
+    margin-right: 6em;
+}
+#footer_izq>div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+}
+#footer_izq>div>p{
+    font-family: 'EditorialNew-UltraLightItalic';
+}
+#footer_izq>div>h4{
+    font-family: 'EditorialNew-Italic';
+}
+#footer_dcha{
+    display: flex;
+    flex-direction: column;
+    padding-right: 1em;
+}
+iframe{
+  
+    border-radius: 1em;
+
+}
+#contacto{
+
+    width: 11em;
+
+}
+/* MEDIAQUERIES */
+@media only screen and (max-width: 1200px) {
+
+    #aboutus>div>div {
+        padding: 3em 0.5em;
+    }
+   
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #footer_izq>div>h4,   #footer_dcha>h4 {
+        font-size: 1em;
+    }
+    #footer_izq>div>p {
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > input {
+        font-size: 0.8em;
+    }
+    #logo {
+        margin: 0em 1em;
+    }
+  
+}
+@media only screen and (max-width: 1040px) {
+    
+
+}
+
+
+
+
+@media only screen and (max-width: 850px) {
+    #intro>div>img{
+        width: 100vw;
+    }
+ .hamburguer{
+     display: block;
+     position: fixed;
+     top: 1em;
+     right: 1em;
+     margin: 1em;
+     cursor: pointer;
+     z-index: 20;
+     scale: 155%;
+ }
+.menu{
+    display: none; 
+   
+}
+ .menuItem{
+    float: none;
+    display: block;
+    text-align: right;
+ }
+
+
+.show-menu {
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: auto;
+    width: 35vw;
+    height: 100vh;
+    flex-direction: column;
+    padding: 3em;
+    box-shadow: 0px 0px 20px 3px rgba(255, 255, 255, 0.562);
+
+}
+
+#aboutus>div {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#aboutus>div>div {
+    margin-top: 1em !important;
+}
+#aboutus>div>div>img {
+    padding: 0em 1.5em;
+    width: 22vw;
+}
+footer {
+    padding: 1em 0em;
+}
+footer>div {
+
+    flex-direction: column;
+  
+    align-items: center;
+}
+#footer_izq>div {
+    margin: 3em;
+}
+
+
+div.boton{
+    scale: 90%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+div.boton > a{
+    align-items: center;
+}
+
+#aboutus>div>div>p {
+    font-size: 1em;
+
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+ 
+
+    .show-menu {
+        width: 50vw; 
+    }
+   
+   
+
+}
+@media only screen and (max-width: 400px) {
+
+    #aboutus>div>div>img {
+        width: 62vw;
+    }
+    #footer_izq>div>p {
+        font-size: 0.6em;
+    }
+    #footer_izq>div>h4, #footer_dcha>h4 {
+        font-size: 0.8em;
+    }
+    #footer_dcha> form > div > input {
+        width: 13em;
+    }
+
+    label {
+        font-size: 0.6em;
+    }
+
+    #footer_dcha> form > input  {
+        font-size: 0.7em;
+    }
+    #envio>div>p {
+        font-size: 0.7em;
+    }
+    .btn {
+        scale: 80%;
+    }
+}

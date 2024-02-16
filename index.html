@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/Logo.png" style="height: 100%; width: auto;">
+    <title>Flamingo Oasis Eco Villa</title>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/3d1ed1057a.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Prosto+One&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <header>
+        
+        <nav id="menu">
+        
+            <ul class="menu">
+                <li><a href="#mapa" onclick="closeMenu()" class="menuItem">Cómo llegar</a></li>
+                <li><a href="#otras" onclick="closeMenu()" class="menuItem">Otras ofertas</a></li>
+                <li>
+                    <div style=" background-color: transparent !important;" ><img id="logo" src="img/Logo.png" alt=""></div>
+                </li>
+                <li><a href="#contacto" onclick="closeMenu()" class="menuItem">Contacto</a></li>
+                <li><a href="" onclick="closeMenu()" class="menuItem">Reservar</a></li>
+                            
+
+            </ul>
+            <a href="javascript:void(0);" style="color: #316b8f; background-color: transparent !important;" class="hamburguer" onclick="toggleMenu()">
+                                <i style="color: #316b8f; background-color: transparent !important;" class="fa fa-bars"></i></a>
+        </nav>
+
+
+    </header>
+    <section id="intro">
+        <div>
+            <img src="">
+            
+            <h1 style="font-family: 'Bigilla-Bold' ;">Ya Disponible</h1>
+            <a href=""><p>¡Reserva ya tus fechas!</p></a>
+        </div>
+        
+    </section>
+    <section id="aboutus">
+        <h1>Instalaciones</h1>
+        <div>
+            <div>
+                <img src="img/piwi.png">
+                <p>Piscina privada</p>
+            </div>
+            <div>
+                <img src="img/bbq.png">
+                <p>Barbacoa y horno de leña</p>
+            </div>
+            <div>
+                <img src="img/luz.png">
+                <p>Energía fotovoltaica</p>
+            </div>
+            <div>
+                <img src="img/agua.png">
+                <p>Sistema de recogida de aguas pluviales</p>
+            </div>
+            <div>
+                <img src="img/habitacion.png">
+                <p>12 plazas en amplias habitaciones</p>
+            </div>
+
+        </div>
+        <p>Estos <strong style="font-family: 'EditorialNew-Regular';">3.000 metros cuadrados</strong> de parcela con instalaciones deportivas, también disponen de una <strong style="font-family: 'EditorialNew-Regular';">chimenea abierta en el salón</strong>  (espectacular para el invierno),  <strong style="font-family: 'EditorialNew-Regular';">aire acondicionado con bomba de calor</strong>, <strong style="font-family: 'EditorialNew-Regular';">separación y
+            reciclaje de residuos y compostaje de materia orgánica</strong>; y disponibilidad para organizar <strong style="font-family: 'EditorialNew-Regular';">eventos</strong>.</p>
+    </section>
+
+
+    <footer>
+        <div>
+            <div id="footer_izq">
+                <div id="contacto">
+                    <h4><i class="fa-solid fa-envelope" style="color: #316b8f;"></i> Contacto</h4>
+                    <p>@gmail.com</p>
+                    <p>+34 </p>
+                
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-location-dot" style="color: #316b8f;"></i> Dónde encontrarnos</h4>
+                    <p>Diseminado las Conquetas, 1, 30710 Los Alcázares, Murcia</p>
+                    <p>Un entorno tranquilo en plena naturaleza y muy cerca del mar</p>
+                    <p>A 3km del Mar Menor</p>
+                    <p>(5 minutos en coche)</p>
+                    <button>Reserva</button>
+                   
+                </div>
+    
+            </div>
+            <div id="footer_dcha">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3155.451147385382!2d-0.8935479241184611!3d37.73255897199609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDQzJzU3LjIiTiAwwrA1MycyNy41Ilc!5e0!3m2!1ses!2ses!4v1708099371589!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
