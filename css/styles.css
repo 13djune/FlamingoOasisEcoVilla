@@ -285,6 +285,14 @@ iframe{
     width: 11em;
 
 }
+#contacto>p>a{
+    color: var(--color1) !important;
+
+}
+#contacto>p>a:hover{
+    font-family: 'EditorialNew-Italic';
+    
+}
 /* MEDIAQUERIES */
 @media only screen and (max-width: 1200px) {
 
